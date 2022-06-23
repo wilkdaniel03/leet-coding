@@ -1,3 +1,6 @@
 go 1.18
 
-use ./longest-substring
+use (
+	./longest-substring
+	./median-of-two-sorted-arrays
+)
