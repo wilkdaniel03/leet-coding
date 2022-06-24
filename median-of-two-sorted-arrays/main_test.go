@@ -33,14 +33,14 @@ func TestMedianOptimalApproach(t *testing.T) {
   expected1 := float64(2)
   expected2 := float64(2.5)
 
-  result1 := BruthForceSolution(input1.arr1, input1.arr2)
-  result2 := BruthForceSolution(input2.arr1, input2.arr2)
+  result1 := MedianOptimalApproach(input1.arr1, input1.arr2)
+  result2 := MedianOptimalApproach(input2.arr1, input2.arr2)
 
   if result1 != expected1 {
-    t.Errorf("BruthForceSolution(%v, %v) = %f\nExpexted %f", input1.arr1, input1.arr2, result1, expected1)
+    t.Errorf("MedianOptimalApproach(%v, %v) = %f\nExpexted %f", input1.arr1, input1.arr2, result1, expected1)
   }
 
   if result2 != expected2 {
-    t.Errorf("BruthForceSolution(%v, %v) = %f\nExpexted %f", input2.arr1, input2.arr2, result2, expected2)
+    t.Errorf("MedianOptimalApproach(%v, %v) = %f\nExpexted %f", input2.arr1, input2.arr2, result2, expected2)
   }
 }

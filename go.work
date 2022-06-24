@@ -3,4 +3,5 @@ go 1.18
 use (
 	./longest-substring
 	./median-of-two-sorted-arrays
+	./palidrome
 )
