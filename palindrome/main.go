@@ -36,3 +36,16 @@ func helper(str string, i int) bool {
 
   return helper(str, i+1)
 }
+
+func Optimal(input int) bool {
+  str := strconv.Itoa(input)
+  for i := 0; i < len(str); i++ {
+    if i >= len(str) -1 -i {
+      return true
+    }
+    if str[i] != str[len(str) -1 -i] {
+      return false
+    }
+  }
+  return true
+}
