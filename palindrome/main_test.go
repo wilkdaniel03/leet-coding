@@ -79,3 +79,29 @@ func TestOptimalTime2(t *testing.T) {
     t.Errorf("OptimalTime2(%v) = %v\nExpected %v", input3, result3, expected3)
   }
 }
+
+func TestOptimal(t *testing.T) {
+  input1 := 121
+  input2 := -121
+  input3 := 10
+
+  expected1 := true
+  expected2 := false
+  expected3 := false
+
+  result1 := Optimal(input1)
+  result2 := Optimal(input2)
+  result3 := Optimal(input3)
+
+  if result1 != expected1 {
+    t.Errorf("Optimal(%v) = %v\nExpected %v", input1, result1, expected1)
+  }
+
+  if result2 != expected2 {
+    t.Errorf("Optimal(%v) = %v\nExpected %v", input2, result2, expected2)
+  }
+
+  if result3 != expected3 {
+    t.Errorf("Optimal(%v) = %v\nExpected %v", input3, result3, expected3)
+  }
+}
